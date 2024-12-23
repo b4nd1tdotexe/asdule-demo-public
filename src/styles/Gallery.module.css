@@ -1,0 +1,19 @@
+@media screen and (min-width: 640px) {
+  .grid {
+    grid-column: span 2;
+  }
+
+  .grid:last-child:nth-child(3n - 1) {
+    grid-column-end: -2;
+  }
+
+  .grid:nth-last-child(2):nth-child(3n + 1) {
+    grid-column-end: 4;
+  }
+
+  /* Dealing with single orphan */
+
+  .grid:last-child:nth-child(3n - 2) {
+    grid-column-end: 5;
+  }
+}
